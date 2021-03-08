@@ -694,9 +694,9 @@ describe("the JavaScript language", () => {
         const lion = new Lion();
         console.log(lion);
 
-        // lion.hunt = function () {
-        //   this.energy = 4000;
-        // };
+        lion.hunt = function () {
+          this.energy = 4000;
+        };
         lion.hunt();
 
         expect(lion.energy).toEqual(4000);
